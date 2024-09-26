@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Assignment</title>
+    </head>
+    <body style="background-image: url('https://th.bing.com/th/id/OIP.7xtez8B_UEt77g3HfCLVXgHaKG?rs=1&pid=ImgDetMain')">
+        <b style="color: aquamarine;"><h1>OMA'S BRIDALS</h1></b>
+        <input placeholder="Input your full name" id="fullName" onkeydown="fullNameKey(event)">
+        <button id="'fullNameButton" onclick="fullNameFunc()">Enter</button>
+        <p id="fullName-p" style="color: bisque;"></p>
+        <button onclick="addCart(1)">Add to cart</button>
+        <button onclick="addCart(2)">+2</button>
+        <button  onclick="addCart(3)">+3</button>
+        <button  onclick="delCart(1)">Remove from cart</button>
+        <button onclick="delCart(2)">-2</button>
+        <button onclick="delCart(3)">-3</button>
+        <button onclick="emptyCart()">Empty cart</button>
+        <p id="cart" style="color: bisque;"></p>
+        
+        <script>
+            let cart=0
+            let cart_display=document.querySelector('#cart')
+            cart_display.innerText=`No. of items in cart:${cart}`
+            let addCart=(no)=>{cart+=no
+                cart_display.innerText=`No. of items in cart:${cart}`}
+            let delCart=(no)=>{
+                if(cart!=0){cart-=no
+                cart_display.innerText=`No. of items in cart:${cart}`}}
+            let emptyCart=()=>{
+                cart=0
+                cart_display.innerText=`No. of items in cart:${cart}`}
+
+            let fullNameKey=(event)=>{if(event.key==='Enter'){fullNameFunc()}}
+            let fullNameFunc=()=>{
+               let  fullName=document.querySelector('#fullName').value
+               let fullNameDisplay=document.querySelector('#fullName-p')
+            fullName=fullName.split(' ')
+            let firstName=fullName[0]
+            let lastName=fullName[1]
+            fullNameDisplay.innerHTML=`First Name:${firstName}<br/>Last Name:${lastName}`
+        } 
+        </script>
+    </body>
+</html>
