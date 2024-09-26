@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!--Error in encountered and how I solved it
+1.The split() method requires to be saved-->
+<head>
+        <title>Word scrambler</title>
+    </head>
+    <body style="background-image: url('https://th.bing.com/th/id/R.8c291132c9cc848be06e934d9f9023bc?rik=HRmvmtaVZ0FJvg&riu=http%3a%2f%2fc1.staticflickr.com%2f4%2f3037%2f3034488931_2b4cb42df3.jpg&ehk=KgllOC5Tox%2bpFfhzZb4Vge4va5YiLmYssMj4XtMzLAU%3d&risl=&pid=ImgRaw&r=0');">
+        <b><h1 style="color: #a52a2a;">WORD SCRAMBLER</h1></b>
+        <input onkeydown="keyWordScrabble(event)" placeholder="Enter your word e.g bell" id="word">
+        <button onclick="wordscramble()">scramble word</button>
+        <button onclick="reset()">reset</button>
+        <p id="p" style="font-size:larger;"></p>
+        <script>
+            let reset=function(){document.querySelector('#p').innerHTML=''}
+        let keyWordScrabble=event=> {
+            if(event.key==='Enter'){wordscramble()}}
+        let wordscramble=()=>{
+            let input=document.querySelector('#word').value
+            word= input.split('')
+            let po=document.querySelector('#p')
+
+            let newWord=[]
+            for(let i=word.length;i!=0;i--){
+                let index=Math.floor(Math.random()*word.length)
+                newWord.push(word.splice(index,1))
+            }
+            let newerWord=newWord.join('')
+            if(newerWord!=''){
+                po.setAttribute('style','color:black')
+            po.innerHTML=`The scrambled word is ${newerWord}`}
+            else{po.setAttribute('style','color:red')
+                po.innerHTML='Input a word'}
+        }</script>
+    </body>
+</html>
