@@ -1,0 +1,33 @@
+#input{
+    border-radius: 1.9%;
+}
+#list p{
+    border: inset;
+    background-color: rgb(226, 146, 146);
+    border-color: brown;
+    color:brown
+}
+#submit{
+    border-radius: 12%;
+    border: inset;
+}
+#head{  
+    transition: text-shadow 0.7s;
+    color:brown 
+}
+#head:hover{
+    text-shadow:1px 1px 1px  blueviolet;
+}
+#col{
+    
+    border: hidden;
+    background-color: blueviolet;
+    border-radius: 15px;
+    transition: opacity 0.7s;
+    padding: 1.2%;
+    
+}
+
+#col:hover{
+    opacity: 0.6;
+}

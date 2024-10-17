@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>My To-do list</title>
+        <script src="list.js"></script>
+        <link rel="stylesheet" type="text/css" href="list.css">
+    </head>
+    <body>
+        <h1 id="head">My To-do list <button id="col" onclick="color()">click to change my color</button></h1>
+        <input id="input" type="text" onkeydown="createKey(event)" placeholder="Enter the items in your list">
+        <button id="submit" onclick="create()">submit</button>
+        <div id="list"></div>
+    </body>
+</html>
