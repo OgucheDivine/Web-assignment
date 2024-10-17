@@ -10,7 +10,6 @@ function color(){
 }
 
 function checker(img) {
-    console.log(img.src)
     if (img.src=='check.svg'){
         img.src='checked.svg'
     }else{
@@ -24,7 +23,7 @@ function create(){
     let input=document.querySelector('#input')
     if (input.value !='  ' &&input.value !=' ' && input.value !=''){
     let ele=document.createElement('p')
-    ele.innerHTML=`<img src="check.svg" onclick="checker(this)" height=5.8% width=5.8% > ${input.value}<img src="bin.svg" height="5.9%" width="5.63%" onclick="this.parentNode.remove()">`
+    ele.innerHTML=`<img src="check.svg" onclick="checker(this)" height=15.8% width=15.8% > ${input.value}<img src="bin.svg" height="15.9%" width="15.63%" onclick="this.parentNode.remove()">`
     list.appendChild(ele)
     input.value=''}
 }
