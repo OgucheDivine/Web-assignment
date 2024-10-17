@@ -10,12 +10,11 @@ function color(){
 }
 
 function checker(img) {
-    if (img.src=='check.svg'){
-        img.src='checked.svg'
+    if (img.src=='https://github.com/OgucheDivine/Web-assignment/check.svg'){
+        img.src='https://github.com/OgucheDivine/Web-assignment/checked.svg'
     }else{
-        img.src='check.svg'
+        img.src='https://github.com/OgucheDivine/Web-assignment/check.svg'
     }
-    document.body.createElement('p')=inner.HTML='img.src'
   }
 
 function create(){
