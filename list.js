@@ -23,7 +23,7 @@ function create(){
     let input=document.querySelector('#input')
     if (input.value !='  ' &&input.value !=' ' && input.value !=''){
     let ele=document.createElement('p')
-    ele.innerHTML=`<img src="checked.svg" onclick="checker(this)" height=15.8% width=15.8% > ${input.value}<img src="bin.svg" height="15.9%" width="15.63%" onclick="this.parentNode.remove()">`
+    ele.innerHTML=`<img src="checked.svg" onclick="checker(this)" height=10.8% width=10.8% > ${input.value}<img src="bin.svg" height="10.9%" width="10.63%" onclick="this.parentNode.remove()">`
     list.appendChild(ele)
     input.value=''}
 }
