@@ -10,10 +10,10 @@ function color(){
 }
 
 function checker(img) {
-    if (img.src=='check.svg'){
-        img.src='checked.svg'
+    if (img.src=='http://127.0.0.1:5500/check.svg'){
+        img.src='http://127.0.0.1:5500/checked.svg'
     }else{
-        img.src='check.svg'
+        img.src='http://127.0.0.1:5500/check.svg'
     }
   }
 
