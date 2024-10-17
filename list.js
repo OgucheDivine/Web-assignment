@@ -15,6 +15,7 @@ function checker(img) {
     }else{
         img.src='check.svg'
     }
+    document.body.createElement('p')=inner.HTML='img.src'
   }
 
 function create(){
@@ -23,7 +24,7 @@ function create(){
     let input=document.querySelector('#input')
     if (input.value !='  ' &&input.value !=' ' && input.value !=''){
     let ele=document.createElement('p')
-    ele.innerHTML=`<img src="checked.svg" onclick="checker(this)" height=6.8% width=6.8% > ${input.value}<img src="bin.svg" height="6.9%" width="6.63%" onclick="this.parentNode.remove()">`
+    ele.innerHTML=`<img src="check.svg" onclick="checker(this)" height=6.8% width=6.8% > ${input.value}<img src="bin.svg" height="6.9%" width="6.63%" onclick="this.parentNode.remove()">`
     list.appendChild(ele)
     input.value=''}
 }
