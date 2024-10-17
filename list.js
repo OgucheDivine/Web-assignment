@@ -13,7 +13,7 @@ function checker(img) {
     if (img.src=='check.svg'){
         img.src='checked.svg'
     }else{
-        img.src='checked.svg'
+        img.src='check.svg'
     }
   }
 
