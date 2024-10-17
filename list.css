@@ -12,12 +12,11 @@
     border: inset;
 }
 #head{  
-    transition: text-shadow 0.7s;
-    color:brown 
+    
+    color:brown ;
+     text-shadow:1px 1px 1px  blueviolet;
 }
-#head:hover{
-    text-shadow:1px 1px 1px  blueviolet;
-}
+
 #col{
     
     border: hidden;
